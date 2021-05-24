@@ -3,20 +3,21 @@ ELK project set-up and submission
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Diagrams/network_diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+    -[Configure ELK-VM](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/install-elk.yml)
+    -[filebeat.yml](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/filebeat-playbook.yml)
+    -[metricbeat.yml](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/metricbeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
-- Access Policies
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
+    - Description of the Topology
+    - Access Policies
+    - ELK Configuration
+    - Beats in Use
+    - Machines Being Monitored
+    - How to Use the Ansible Build
 
 
 ### Description of the Topology
