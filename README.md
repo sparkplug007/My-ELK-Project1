@@ -4,7 +4,7 @@ ELK project set-up and submission
 
 The files in this repository were used to configure the network depicted below.
 
-![alt-txt](Images/diagram_filename.png)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Diagrams/Unit_12-Cloud_Security_diagram.drawio)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
