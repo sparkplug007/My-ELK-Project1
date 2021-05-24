@@ -12,12 +12,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
  - [metricbeat playbook](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/metricbeat-playbook.yml)
 
 This document contains the following details:
-    - Description of the Topology
-    - Access Policies
-    - ELK Configuration
-    - Beats in Use
-    - Machines Being Monitored
-    - How to Use the Ansible Build
+ - Description of the Topology
+ - Access Policies
+ - ELK Configuration
+ - Beats in Use
+ - Machines Being Monitored
+ - How to Use the Ansible Build
 
 
 ### Description of the Topology
