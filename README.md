@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-    -[Configure ELK-VM](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/install-elk.yml)
+    - [Configure ELK-VM](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/install-elk.yml)
     -[filebeat.yml](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/filebeat-playbook.yml)
     -[metricbeat.yml](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/metricbeat-playbook.yml)
 
