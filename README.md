@@ -34,30 +34,32 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function                   | IP Address       | Operating System |
-|----------|----------------------------|------------------|------------------|
-| Jump-Box Provisioner | Gateway        | 10.0.0.1         | Linux            |
-| web-1    | Application server         | 10.0.0.6         | Linux            |
-| web-2    | Application server         | 10.0.0.7         | Linux            |
-| ELK-server|ELK-stack     |            | Linux            |
+| Name     | Function                   | IP Address       | Operating System        |
+|----------|----------------------------|------------------|-------------------------|
+| Jump-Box Provisioner | Gateway        | 10.0.0.1         | Linux Ubuntu 18.04-LTS  |
+| web-1    | webserver-DVWA             | 10.0.0.6         | Linux Ubuntu 18.04-LTS  |
+| web-2    | webserver-DVWA             | 10.0.0.7         | Linux Ubuntu 18.04-LTS  |
+| ELK-server|ELK-stack                  | 10.1.0.4         | Linux Ubuntu 18.04-LTS  |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump-Box Provisioner and ELK-server machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 10.0.0.4 internal IP address
+- 10.1.0.4 internal IP address
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by ssh.
+- ELK-server VM can only be access through ssh from my Jump-Box Provisioner via my 10.0.0.4 internal IP address
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name                  | Publicly Accessible | Allowed IP Addresses     |
+|-----------------------|---------------------|--------------------------|
+| Jump Box Provisioner  | Yes                 | my Box-public IP address |
+| web-1                 | No                  | 10.0.0.4 private IP address|
+| web-2                 | No                  | 10.0.0.4 private IP address|
+| ELK-server            | Yes                 | my Box-public IP address |
 
 ### Elk Configuration
 
