@@ -65,7 +65,11 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- Configure maximum mapped memory with sysctl module
+- Install docker.io and python3-pip packages with apt module
+- Install docker python package with pip
+- Enable sysctl module
+- Enable systemd module
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
