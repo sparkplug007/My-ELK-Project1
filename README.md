@@ -3,11 +3,13 @@ ELK project set-up and submission
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Diagrams/network_diagram.png)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Diagrams/Cloud%20Diagram_with_ELK.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
  - [Configure ELK-VM](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/install-elk.yml)
+ - [DVWA configuration](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/filebeat-config.yml)
+ - [ filebeat.config file](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/filebeat-config.yml)
  - [filebeat playbook](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/filebeat-playbook.yml)
  - [metricbeat playbook](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/metricbeat-playbook.yml)
 
@@ -81,15 +83,7 @@ The playbook implements the following tasks:
 - ...
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-
-
-
-
-
-
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/docker%20ps%20-a%20command.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -112,10 +106,10 @@ SSH into the control node and follow the steps below:
 - Update the filebeat-config.yml file to include the private IP of the ELK-server (10.1.0.4) to the hosts in output:elasticsearch and setup.kibana section of the configuration file.
 - Repeat this procedure for the metricbeat-config.yml file.
 - Run the playbook, $ ansible-playbook filebeat.yml
-![alt-txt](https://github.com)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/ansible-playbook_filebeat.png)
 
 and navigate to http://[ELK-server Public IP]:5601/app/kibana. to check that the installation worked as expected.
-![alt-txt](https://github.com)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/ELK-filebeat-kibana.png)
 
 Which file is the playbook:
 - first activity.yml - used to configured dockers on DVWA was copied to /etc/ansible folder
@@ -125,11 +119,11 @@ Which file is the playbook:
 
 Which file do you update to make Ansible run the playbook on a specific machine?
 - /etc/ansible/hosts
-![alt-txt](https://github.com)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/host.png)
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
 Which URL do you navigate to in order to check that the ELK server is running?
-![alt-txt](https://github.com)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/ELK-filebeat-kibana.png)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
