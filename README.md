@@ -8,8 +8,9 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
  - [Configure ELK-VM](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/install-elk.yml)
- - [DVWA configuration](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/filebeat-config.yml)
- - [ filebeat.config file](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/filebeat-config.yml)
+ - [DVWA configuration](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/firstactivity.yml)
+ - [filebeat.config file](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/filebeat-config.yml)
+ - [metricbeat.config file](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/metricbeat-config.yml)
  - [filebeat playbook](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/filebeat-playbook.yml)
  - [metricbeat playbook](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/metricbeat-playbook.yml)
 
@@ -35,7 +36,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function                   | IP Address       | Operating System        |
 |----------|----------------------------|------------------|-------------------------|
@@ -53,7 +54,7 @@ Only the Jump-Box Provisioner and ELK-server machines can accept connections fro
 - 10.1.0.4 internal IP address
 
 Machines within the network can only be accessed by ssh.
-- ELK-server VM can only be access through ssh from my Jump-Box Provisioner via my 10.0.0.4 internal IP address
+- ELK-server VM can only be access through ssh from my Jump-Box Provisioner via my 10.1.0.4 internal IP address
 
 A summary of the access policies in place can be found in the table below.
 
@@ -83,6 +84,7 @@ The playbook implements the following tasks:
 - ...
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/docker%20ps%20-a%20command.png)
 
 ### Target Machines & Beats
@@ -105,17 +107,19 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml file to /etc/ansible/files folder.
 - Update the filebeat-config.yml file to include the private IP of the ELK-server (10.1.0.4) to the hosts in output:elasticsearch and setup.kibana section of the configuration file.
 - Repeat this procedure for the metricbeat-config.yml file.
-- Run the playbook, $ ansible-playbook filebeat.yml
+- Run the playbook, _$ ansible-playbook filebeat-playbook.yml_
+
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/ansible-playbook_filebeat.png)
 
 and navigate to http://[ELK-server Public IP]:5601/app/kibana. to check that the installation worked as expected.
+
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/ELK-filebeat-kibana.png)
 
 Which file is the playbook:
-- first activity.yml - used to configured dockers on DVWA was copied to /etc/ansible folder
-- install-elk.yml - used to install my ELK-server was copied to /etc/ansible/files folder
-- filebeat-playbook.yml - used to configured filebeat was copied to /etc/ansible/roles folder
-- metricbeat-playbook.yml - used to configured metricbeat was copied to /etc/ansible/roles folder
+- _first activity.yml - used to configured dockers on DVWA was copied to /etc/ansible folder
+- _install-elk.yml - used to install my ELK-server was copied to /etc/ansible/files folder
+- _filebeat-playbook.yml - used to configured filebeat was copied to /etc/ansible/roles folder
+- _metricbeat-playbook.yml - used to configured metricbeat was copied to /etc/ansible/roles folder
 
 Which file do you update to make Ansible run the playbook on a specific machine?
 - /etc/ansible/hosts
