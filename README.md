@@ -137,7 +137,9 @@ Which URL do you navigate to in order to check that the ELK server is running?
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/docker%20ps%20-a%20command.png)
+
 After identifying that the ansible are running in you machine, activate the shell container to get connected to it
 Navigate to _**/etc/ansible/**_ folder and copy all youy *.yml* files and edit these files to want you need to accomplish.
+
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/bonus.png)
 
