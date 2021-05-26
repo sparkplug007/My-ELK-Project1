@@ -5,7 +5,7 @@ ELK project set-up and submission
 The files in this repository were used to configure the network depicted below.
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Diagrams/Cloud%20Diagram_with_ELK.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the *.yml* file may be used to install only certain pieces of it, such as Filebeat.
 
  - [Configure ELK-VM](https://github.com/sparkplug007/My-ELK-Project1/blob/867fee882ea9228db0516ec585ba15d09f645b8c/Ansible/install-elk.yml)
  - [DVWA configuration](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Ansible/firstactivity.yml)
@@ -116,18 +116,24 @@ and navigate to http://[ELK-server Public IP]:5601/app/kibana. to check that the
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/ELK-filebeat-kibana.png)
 
 Which file is the playbook:
-- _first activity.yml - used to configured dockers on DVWA was copied to /etc/ansible folder
-- _install-elk.yml - used to install my ELK-server was copied to /etc/ansible/files folder
-- _filebeat-playbook.yml - used to configured filebeat was copied to /etc/ansible/roles folder
-- _metricbeat-playbook.yml - used to configured metricbeat was copied to /etc/ansible/roles folder
+- _first activity.yml_ - used to configured dockers on DVWA was copied to /etc/ansible folder
+- _install-elk.yml_ - used to install my ELK-server was copied to /etc/ansible/files folder
+- _filebeat-playbook.yml_ - used to configured filebeat was copied to /etc/ansible/roles folder
+- _metricbeat-playbook.yml_ - used to configured metricbeat was copied to /etc/ansible/roles folder
 
 Which file do you update to make Ansible run the playbook on a specific machine?
 - /etc/ansible/hosts
+
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/host.png)
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
 Which URL do you navigate to in order to check that the ELK server is running?
+
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/ELK-filebeat-kibana.png)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/docker%20ps%20-a%20command.png)
+![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/bonus.png)
+
