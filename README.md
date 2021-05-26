@@ -127,6 +127,8 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/host.png)
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+As shown above, navigate to the _**/etc/ansible/hosts**_ file and add which machine you need to add while
+filebeat is a logging agent installed on the server machine generating the log files.
 
 Which URL do you navigate to in order to check that the ELK server is running?
 
@@ -135,5 +137,7 @@ Which URL do you navigate to in order to check that the ELK server is running?
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/docker%20ps%20-a%20command.png)
+After identifying that the ansible are running in you machine, activate the shell container to get connected to it
+Navigate to _**/etc/ansible/**_ folder and copy all youy *.yml* files and edit these files to want you need to accomplish.
 ![alt-txt](https://github.com/sparkplug007/My-ELK-Project1/blob/main/Images/bonus.png)
 
